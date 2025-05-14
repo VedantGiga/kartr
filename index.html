@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kartr - Connect Influencers and Sponsors</title>
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Font Awesome Icons -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <!-- Chart.js -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/style.css">
+
+    <style>
+        :root {
+            --primary-color-rgb: 0, 123, 255; /* Default Bootstrap primary color in RGB format */
+        }
+
+        /* Hero Section Styles */
+        .hero-section {
+            background: linear-gradient(135deg, #1a1e21, #2c3136);
+            color: white;
+            padding: 4rem 0;
+            margin-bottom: 4rem;
+            border-radius: 15px;
+            position: relative;
+            overflow: hidden;
+            box-shadow: 0 20px 50px rgba(0, 0, 0, 0.15);
+        }
+
+        .hero-section::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        }
+
+        .hero-title {
+            font-size: 3.2rem;
+            font-weight: 800;
+            margin-bottom: 1rem;
+            line-height: 1.2;
+            background: linear-gradient(to right,
+                #ff0000, /* Red */
+                #ff8000, /* Orange */
+                #ffff00, /* Yellow */
+                #00ff00, /* Green */
+                #00ffff, /* Cyan */
+                #0080ff, /* Blue */
+                #8000ff  /* Violet */
+            );
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            color: transparent;
+            text-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+            animation: rainbow-animation 6s linear infinite;
+            background-size: 400% 100%;
+        }
+
+        @keyframes rainbow-animation {
+            0% {
+                background-position: 0% 50%;
+            }
+            50% {
+                background-position: 100% 50%;
+            }
+            100% {
+                background-position: 0% 50%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light sticky-top">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+                <div class="logo-container">
+                    <img src="img/no_background_katr_logo.png" alt="Kartr Logo" class="logo-img">
+                    <div class="tagline">Shine and Connect</div>
+                </div>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="pages/features.html">Features</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="pages/ai-features.html">AI Features</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="pages/stats.html">Analytics</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="pages/demo.html">Demo</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="pages/search.html">Search</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="pages/contact.html">Contact</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="pages/login.html">Login</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link btn btn-primary text-white" href="pages/register.html">Sign Up</a>
+                    </li>
+                    <li class="nav-item">
+                        <button class="btn theme-toggle" id="themeToggle">
+                            <i class="fas fa-moon"></i>
+                        </button>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <div class="container main-container">
+        <!-- Hero Section -->
+        <section class="hero-section">
+            <div class="container">
+                <div class="row align-items-center hero-content">
+                    <div class="col-lg-6">
+                        <h1 class="hero-title">Connect Influencers with Sponsors</h1>
+                        <p class="hero-subtitle">Kartr helps YouTube influencers analyze their performance and connect with the right sponsors to grow their channel.</p>
+                        <div class="hero-buttons">
+                            <a href="pages/register.html" class="btn btn-light btn-lg">
+                                <i class="fas fa-rocket me-2"></i>Get Started
+                            </a>
+                            <a href="#how-it-works" class="btn btn-outline-light btn-lg">
+                                <i class="fas fa-info-circle me-2"></i>Learn More
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 d-flex align-items-center justify-content-center">
+                        <div class="hero-image-wrapper">
+                            <img src="img/no_background_katr_logo.png" alt="Kartr Platform" class="hero-image">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Features Section -->
+        <section class="features-section">
+            <div class="container">
+                <h2 class="section-title">Why Choose <span>Kartr</span></h2>
+                <div class="row">
+                    <div class="col-md-4 mb-4">
+                        <div class="card feature-card">
+                            <div class="card-body text-center">
+                                <div class="feature-icon">
+                                    <i class="fas fa-chart-line"></i>
+                                </div>
+                                <h3 class="feature-title">Advanced Analytics</h3>
+                                <p class="feature-text">Get detailed insights into your YouTube channel performance with our comprehensive analytics tools.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 mb-4">
+                        <div class="card feature-card">
+                            <div class="card-body text-center">
+                                <div class="feature-icon">
+                                    <i class="fas fa-handshake"></i>
+                                </div>
+                                <h3 class="feature-title">Sponsor Matching</h3>
+                                <p class="feature-text">Connect with brands and sponsors that align with your content and audience demographics.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 mb-4">
+                        <div class="card feature-card">
+                            <div class="card-body text-center">
+                                <div class="feature-icon">
+                                    <i class="fas fa-robot"></i>
+                                </div>
+                                <h3 class="feature-title">AI-Powered Insights</h3>
+                                <p class="feature-text">Leverage artificial intelligence to get content recommendations and audience insights.</p>
+                                <div class="ai-feature-note">
+                                    <img src="img/ai_feature_screenshot.png" alt="AI Feature Screenshot" class="img-fluid mt-3">
+                                    <p class="text-muted mt-2"><small>* AI features available in premium plans</small></p>
+                                    <a href="pages/ai-features.html" class="btn btn-sm btn-outline-primary mt-2">Learn More</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- How It Works Section -->
+        <section class="how-it-works" id="how-it-works">
+            <div class="container">
+                <h2 class="section-title">How <span>Kartr</span> Works</h2>
+                <div class="row justify-content-center">
+                    <div class="col-lg-10">
+                        <div class="process-wrapper">
+                            <div class="row">
+                                <div class="col-md-4 mb-5">
+                                    <div class="process-card">
+                                        <div class="process-icon">
+                                            <i class="fas fa-user-plus"></i>
+                                        </div>
+                                        <h3 class="process-title">Sign Up</h3>
+                                        <p class="process-description">Create your account as an influencer or sponsor and set up your profile with your YouTube channel details.</p>
+                                    </div>
+                                </div>
+                                <div class="col-md-4 mb-5">
+                                    <div class="process-card">
+                                        <div class="process-icon">
+                                            <i class="fas fa-chart-line"></i>
+                                        </div>
+                                        <h3 class="process-title">Analyze</h3>
+                                        <p class="process-description">Get comprehensive analytics about your channel performance, audience demographics, and content engagement.</p>
+                                    </div>
+                                </div>
+                                <div class="col-md-4 mb-5">
+                                    <div class="process-card">
+                                        <div class="process-icon">
+                                            <i class="fas fa-handshake"></i>
+                                        </div>
+                                        <h3 class="process-title">Connect</h3>
+                                        <p class="process-description">Match with sponsors that align with your content and audience, and start collaborating on campaigns.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CTA Section -->
+        <section class="cta-section">
+            <div class="container">
+                <div class="cta-content">
+                    <h2 class="cta-title">Ready to Grow Your Channel?</h2>
+                    <p class="cta-text">
+                        Start using Kartr today to analyze your channel and connect with potential sponsors.
+                    </p>
+                    <div class="cta-buttons">
+                        <a href="pages/register.html" class="btn btn-light btn-lg">Sign Up Now</a>
+                        <a href="pages/contact.html" class="btn btn-outline-light btn-lg">Contact Us</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Platform Stats Section (Static for GitHub Pages) -->
+        <section class="platform-stats">
+            <div class="container">
+                <h2 class="section-title mb-4">Platform <span>Statistics</span></h2>
+                <div class="row text-center">
+                    <div class="col-md-4 mb-4">
+                        <div class="stats-number" data-value="1250">1,250</div>
+                        <div class="stats-title">Influencers</div>
+                    </div>
+                    <div class="col-md-4 mb-4">
+                        <div class="stats-number" data-value="450">450</div>
+                        <div class="stats-title">Sponsors</div>
+                    </div>
+                    <div class="col-md-4 mb-4">
+                        <div class="stats-number" data-value="1700">1,700</div>
+                        <div class="stats-title">Total Users</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="d-flex flex-column align-items-start">
+                    <div class="mb-2">
+                        <img src="img/no_background_katr_logo.png" alt="Kartr Logo" class="footer-logo">
+                        <div class="tagline">Shine and Connect</div>
+                    </div>
+                    <span class="copyright-text">&copy; 2023 Kartr. All rights reserved.</span>
+                </div>
+                <div class="footer-links">
+                    <a href="pages/privacy.html">Privacy Policy</a>
+                    <a href="pages/terms.html">Terms of Service</a>
+                    <a href="pages/contact.html">Contact Us</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Custom JS -->
+    <script src="js/main.js"></script>
+
+    <script>
+        // Smooth scrolling for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+
+        // Theme toggle functionality
+        const themeToggle = document.getElementById('themeToggle');
+        const htmlElement = document.documentElement;
+
+        themeToggle.addEventListener('click', function() {
+            if (htmlElement.getAttribute('data-theme') === 'light') {
+                htmlElement.setAttribute('data-theme', 'dark');
+                themeToggle.innerHTML = '<i class="fas fa-sun"></i>';
+            } else {
+                htmlElement.setAttribute('data-theme', 'light');
+                themeToggle.innerHTML = '<i class="fas fa-moon"></i>';
+            }
+        });
+    </script>
+</body>
+</html>

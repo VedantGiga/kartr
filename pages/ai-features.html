@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Features - Kartr</title>
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Font Awesome Icons -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="../css/style.css">
+
+    <style>
+        .ai-feature-card {
+            border-radius: 15px;
+            overflow: hidden;
+            margin-bottom: 2rem;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+        }
+
+        .ai-feature-header {
+            background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+            color: white;
+            padding: 2rem;
+            position: relative;
+        }
+
+        .ai-feature-header h3 {
+            font-weight: 700;
+            margin-bottom: 1rem;
+        }
+
+        .ai-feature-header p {
+            opacity: 0.9;
+            margin-bottom: 0;
+        }
+
+        .ai-feature-icon {
+            position: absolute;
+            top: 2rem;
+            right: 2rem;
+            font-size: 3rem;
+            opacity: 0.2;
+        }
+
+        .ai-feature-body {
+            padding: 2rem;
+            background-color: var(--card-bg);
+        }
+
+        .ai-feature-screenshot {
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+            margin-bottom: 1.5rem;
+        }
+
+        .ai-feature-screenshot img {
+            width: 100%;
+            height: auto;
+        }
+
+        .ai-feature-note {
+            background-color: rgba(var(--primary-color-rgb), 0.1);
+            border-left: 4px solid var(--primary-color);
+            padding: 1rem;
+            border-radius: 0 5px 5px 0;
+            margin-top: 1.5rem;
+        }
+
+        .ai-feature-note p {
+            margin-bottom: 0;
+            color: var(--text-color);
+        }
+    </style>
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light sticky-top">
+        <div class="container">
+            <a class="navbar-brand" href="../index.html">
+                <div class="logo-container">
+                    <img src="../img/no_background_katr_logo.png" alt="Kartr Logo" class="logo-img">
+                    <div class="tagline">Shine and Connect</div>
+                </div>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="../index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="features.html">Features</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="ai-features.html">AI Features</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="stats.html">Analytics</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="demo.html">Demo</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="search.html">Search</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Contact</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="login.html">Login</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link btn btn-primary text-white" href="register.html">Sign Up</a>
+                    </li>
+                    <li class="nav-item">
+                        <button class="btn theme-toggle" id="themeToggle">
+                            <i class="fas fa-moon"></i>
+                        </button>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <div class="container main-container">
+        <h1 class="text-center mb-5">AI-Powered Features</h1>
+
+        <div class="row justify-content-center mb-5">
+            <div class="col-lg-10">
+                <p class="lead text-center">Kartr leverages cutting-edge artificial intelligence to provide you with powerful insights and tools to grow your channel and connect with the right sponsors.</p>
+            </div>
+        </div>
+
+        <!-- AI Feature 1: Content Analysis -->
+        <div class="ai-feature-card">
+            <div class="ai-feature-header">
+                <h3>AI Content Analysis</h3>
+                <p>Get deep insights into your video content with our advanced AI analysis.</p>
+                <div class="ai-feature-icon">
+                    <i class="fas fa-brain"></i>
+                </div>
+            </div>
+            <div class="ai-feature-body">
+                <div class="ai-feature-screenshot">
+                    <img src="../img/ai_content_analysis_screenshot.png" alt="AI Content Analysis Screenshot">
+                </div>
+                <h4>How It Works</h4>
+                <p>Our AI analyzes your video content, transcripts, and audience engagement to provide actionable insights:</p>
+                <ul>
+                    <li>Topic identification and categorization</li>
+                    <li>Sentiment analysis of comments and engagement</li>
+                    <li>Content quality scoring and recommendations</li>
+                    <li>Audience interest mapping</li>
+                </ul>
+                <div class="ai-feature-note">
+                    <p><i class="fas fa-info-circle me-2"></i> This feature requires API tokens and is available in our premium plans. The screenshot above shows a sample of the analysis dashboard.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- AI Feature 2: Sponsor Matching -->
+        <div class="ai-feature-card">
+            <div class="ai-feature-header">
+                <h3>AI Sponsor Matching</h3>
+                <p>Connect with the perfect sponsors for your content and audience.</p>
+                <div class="ai-feature-icon">
+                    <i class="fas fa-handshake"></i>
+                </div>
+            </div>
+            <div class="ai-feature-body">
+                <div class="ai-feature-screenshot">
+                    <img src="../img/ai_sponsor_matching_screenshot.png" alt="AI Sponsor Matching Screenshot">
+                </div>
+                <h4>How It Works</h4>
+                <p>Our AI-powered matching algorithm connects you with sponsors that align with your content and audience:</p>
+                <ul>
+                    <li>Content-brand alignment analysis</li>
+                    <li>Audience demographic matching</li>
+                    <li>Performance prediction based on similar partnerships</li>
+                    <li>Personalized sponsor recommendations</li>
+                </ul>
+                <div class="ai-feature-note">
+                    <p><i class="fas fa-info-circle me-2"></i> This feature requires API tokens and is available in our premium plans. The screenshot above shows a sample of the sponsor matching interface.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- AI Feature 3: Virtual Influencer Generation -->
+        <div class="ai-feature-card">
+            <div class="ai-feature-header">
+                <h3>Virtual Influencer Generation</h3>
+                <p>Create custom virtual influencer images for your brand partnerships.</p>
+                <div class="ai-feature-icon">
+                    <i class="fas fa-robot"></i>
+                </div>
+            </div>
+            <div class="ai-feature-body">
+                <div class="ai-feature-screenshot">
+                    <img src="../img/virtual_influencer_screenshot.png" alt="Virtual Influencer Generation Screenshot">
+                </div>
+                <h4>How It Works</h4>
+                <p>Our AI image generation technology allows you to create custom virtual influencer images:</p>
+                <ul>
+                    <li>Custom virtual influencer creation</li>
+                    <li>Brand integration in generated images</li>
+                    <li>Style and setting customization</li>
+                    <li>High-resolution output for social media</li>
+                </ul>
+                <div class="ai-feature-note">
+                    <p><i class="fas fa-info-circle me-2"></i> This feature uses Google's Gemini API and is available in our premium plans. The screenshot above shows a sample of the virtual influencer generation interface.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="d-flex flex-column align-items-start">
+                    <div class="mb-2">
+                        <img src="../img/no_background_katr_logo.png" alt="Kartr Logo" class="footer-logo">
+                        <div class="tagline">Shine and Connect</div>
+                    </div>
+                    <span class="copyright-text">&copy; 2023 Kartr. All rights reserved.</span>
+                </div>
+                <div class="footer-links">
+                    <a href="privacy.html">Privacy Policy</a>
+                    <a href="terms.html">Terms of Service</a>
+                    <a href="contact.html">Contact Us</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Custom JS -->
+    <script src="../js/main.js"></script>
+</body>
+</html>

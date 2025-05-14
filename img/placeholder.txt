@@ -1,0 +1,14 @@
+The following placeholder images need to be created:
+
+1. ai_content_analysis_screenshot.png - A screenshot of the AI content analysis dashboard
+2. ai_sponsor_matching_screenshot.png - A screenshot of the AI sponsor matching interface
+3. virtual_influencer_screenshot.png - A screenshot of the virtual influencer generation interface
+4. ai_feature_screenshot.png - A general AI feature screenshot for the homepage
+
+5. channel_avatar.png - A placeholder for the channel avatar in the stats page
+6. demo_video_thumbnail.jpg - A thumbnail for the demo video
+7. demo_channel_avatar.jpg - A channel avatar for the demo page
+8. influencer1.jpg, influencer2.jpg, influencer3.jpg - Avatars for influencers in the search page
+9. sponsor1.jpg - Avatar for sponsor in the search page
+
+These would typically be screenshots of the actual application, but for the GitHub Pages deployment, you can create simple placeholder images with text explaining that these features require API tokens and are available in the full application.
