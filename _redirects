@@ -1,0 +1,10 @@
+# Redirects for Netlify
+
+# Redirect domain aliases to primary domain
+# https://www.kartr.com/* https://kartr.com/:splat 301!
+
+# Optional: Redirect default Netlify subdomain to primary domain
+# https://kartr.netlify.app/* https://kartr.com/:splat 301!
+
+# Handle 404s for SPA
+/* /index.html 200

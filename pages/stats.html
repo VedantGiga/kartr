@@ -4,19 +4,16 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Channel Analytics - Kartr</title>
-    
+
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
-    
+
     <!-- Font Awesome Icons -->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
-    
+
     <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
-    
-    <!-- Chart.js -->
-    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
-    
+
     <!-- Custom CSS -->
     <link rel="stylesheet" href="../css/style.css">
 </head>
@@ -62,231 +59,113 @@
             </div>
         </div>
     </nav>
-    
+
     <!-- Main Content -->
     <div class="container main-container">
         <div class="row mb-4">
-            <div class="col-12">
-                <h1 class="mb-4">Channel Analytics Dashboard</h1>
+            <div class="col-12 text-center">
+                <h1 class="display-4 mb-3">Advanced <span class="text-primary">Analytics</span></h1>
+                <p class="lead mb-4">Gain powerful insights into your YouTube channel performance with our comprehensive analytics tools</p>
                 <div class="alert alert-info">
-                    <i class="fas fa-info-circle me-2"></i> This is a static preview of the analytics dashboard. In the full application, this page displays real-time data from your YouTube channel.
+                    <i class="fas fa-info-circle me-2"></i> Below are screenshots of our analytics dashboard. In the full application, you'll have access to interactive charts and real-time data from your YouTube channel.
                 </div>
             </div>
         </div>
-        
-        <!-- Channel Overview -->
-        <div class="row mb-4">
-            <div class="col-12">
+
+        <!-- Analytics Screenshots -->
+        <div class="row mb-5">
+            <div class="col-12 mb-4">
                 <div class="card">
                     <div class="card-header">
-                        <h5>Channel Overview</h5>
+                        <h5>Channel Performance Overview</h5>
                     </div>
-                    <div class="card-body">
-                        <div class="row">
-                            <div class="col-md-3 mb-3 mb-md-0">
-                                <div class="channel-info">
-                                    <div class="channel-avatar">
-                                        <img src="../img/channel_avatar.png" alt="Channel Avatar">
-                                    </div>
-                                    <div>
-                                        <h5 class="channel-name">TechInfluencer</h5>
-                                        <div class="channel-subscribers">1.2M Subscribers</div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-md-9">
-                                <div class="row">
-                                    <div class="col-md-3 col-6 mb-3">
-                                        <div class="stats-card text-center">
-                                            <div class="stats-number" data-value="1200000">1,200,000</div>
-                                            <div class="stats-title">Subscribers</div>
-                                        </div>
-                                    </div>
-                                    <div class="col-md-3 col-6 mb-3">
-                                        <div class="stats-card text-center">
-                                            <div class="stats-number" data-value="450">450</div>
-                                            <div class="stats-title">Videos</div>
-                                        </div>
-                                    </div>
-                                    <div class="col-md-3 col-6 mb-3">
-                                        <div class="stats-card text-center">
-                                            <div class="stats-number" data-value="85000000">85,000,000</div>
-                                            <div class="stats-title">Total Views</div>
-                                        </div>
-                                    </div>
-                                    <div class="col-md-3 col-6 mb-3">
-                                        <div class="stats-card text-center">
-                                            <div class="stats-number" data-value="2500000">2,500,000</div>
-                                            <div class="stats-title">Monthly Views</div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
+                    <div class="card-body p-0">
+                        <img src="../img/analytics/Screenshot (307).png" alt="Channel Performance Overview" class="img-fluid rounded w-100">
                     </div>
                 </div>
             </div>
-        </div>
-        
-        <!-- Growth Trends -->
-        <div class="row mb-4">
-            <div class="col-lg-8">
-                <div class="card h-100">
-                    <div class="card-header d-flex justify-content-between align-items-center">
-                        <h5>Growth Trends</h5>
-                        <div class="btn-group">
-                            <button class="btn btn-sm btn-outline-primary active">30 Days</button>
-                            <button class="btn btn-sm btn-outline-primary">90 Days</button>
-                            <button class="btn btn-sm btn-outline-primary">1 Year</button>
-                        </div>
-                    </div>
-                    <div class="card-body">
-                        <canvas id="growthChart" height="300"></canvas>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-4">
-                <div class="card h-100">
+
+            <div class="col-12 mb-4">
+                <div class="card">
                     <div class="card-header">
                         <h5>Audience Demographics</h5>
                     </div>
-                    <div class="card-body">
-                        <canvas id="demographicsChart" height="300"></canvas>
+                    <div class="card-body p-0">
+                        <img src="../img/analytics/Screenshot (308).png" alt="Audience Demographics" class="img-fluid rounded w-100">
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-12 mb-4">
+                <div class="card">
+                    <div class="card-header">
+                        <h5>Content Performance & Engagement</h5>
+                    </div>
+                    <div class="card-body p-0">
+                        <img src="../img/analytics/Screenshot (309).png" alt="Content Performance & Engagement" class="img-fluid rounded w-100">
                     </div>
                 </div>
             </div>
         </div>
-        
-        <!-- Recent Videos Performance -->
-        <div class="row mb-4">
+
+        <!-- Features Description -->
+        <div class="row mb-5">
             <div class="col-12">
                 <div class="card">
                     <div class="card-header">
-                        <h5>Recent Videos Performance</h5>
+                        <h5>Analytics Features</h5>
                     </div>
                     <div class="card-body">
-                        <div class="table-responsive">
-                            <table class="table table-hover">
-                                <thead>
-                                    <tr>
-                                        <th>Video</th>
-                                        <th>Published</th>
-                                        <th>Views</th>
-                                        <th>Likes</th>
-                                        <th>Comments</th>
-                                        <th>CTR</th>
-                                        <th>Avg. View Duration</th>
-                                    </tr>
-                                </thead>
-                                <tbody>
-                                    <tr>
-                                        <td>10 Tech Gadgets You Need in 2023</td>
-                                        <td>2 days ago</td>
-                                        <td>245,678</td>
-                                        <td>18,432</td>
-                                        <td>1,245</td>
-                                        <td>8.2%</td>
-                                        <td>6:45</td>
-                                    </tr>
-                                    <tr>
-                                        <td>iPhone 15 Pro Review: Worth the Upgrade?</td>
-                                        <td>1 week ago</td>
-                                        <td>1,245,678</td>
-                                        <td>98,432</td>
-                                        <td>5,245</td>
-                                        <td>12.5%</td>
-                                        <td>8:12</td>
-                                    </tr>
-                                    <tr>
-                                        <td>The Future of AI in 2023</td>
-                                        <td>2 weeks ago</td>
-                                        <td>845,678</td>
-                                        <td>68,432</td>
-                                        <td>3,245</td>
-                                        <td>10.8%</td>
-                                        <td>7:35</td>
-                                    </tr>
-                                    <tr>
-                                        <td>5 Productivity Apps You Need to Try</td>
-                                        <td>3 weeks ago</td>
-                                        <td>545,678</td>
-                                        <td>38,432</td>
-                                        <td>2,245</td>
-                                        <td>9.5%</td>
-                                        <td>5:48</td>
-                                    </tr>
-                                    <tr>
-                                        <td>How to Build a Gaming PC in 2023</td>
-                                        <td>1 month ago</td>
-                                        <td>945,678</td>
-                                        <td>78,432</td>
-                                        <td>4,245</td>
-                                        <td>11.2%</td>
-                                        <td>12:22</td>
-                                    </tr>
-                                </tbody>
-                            </table>
+                        <p>Our comprehensive analytics dashboard provides you with valuable insights about your YouTube channel performance:</p>
+                        <div class="row mb-4">
+                            <div class="col-md-6">
+                                <h6 class="fw-bold"><i class="fas fa-chart-line text-primary me-2"></i>Channel Performance</h6>
+                                <ul class="mb-3">
+                                    <li><strong>Subscriber Growth</strong> - Track your audience growth over time</li>
+                                    <li><strong>View Trends</strong> - Monitor view count patterns and peaks</li>
+                                    <li><strong>Watch Time Analysis</strong> - See how much time viewers spend on your content</li>
+                                    <li><strong>Revenue Tracking</strong> - Keep track of your monetization performance</li>
+                                </ul>
+                            </div>
+                            <div class="col-md-6">
+                                <h6 class="fw-bold"><i class="fas fa-users text-primary me-2"></i>Audience Insights</h6>
+                                <ul class="mb-3">
+                                    <li><strong>Demographic Breakdown</strong> - Age, gender, and location data</li>
+                                    <li><strong>Viewing Habits</strong> - When your audience watches your content</li>
+                                    <li><strong>Engagement Metrics</strong> - Likes, comments, and share statistics</li>
+                                    <li><strong>Audience Retention</strong> - How long viewers stay watching your videos</li>
+                                </ul>
+                            </div>
                         </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        
-        <!-- Sponsor Recommendations -->
-        <div class="row">
-            <div class="col-12">
-                <div class="card">
-                    <div class="card-header">
-                        <h5>Sponsor Recommendations</h5>
-                    </div>
-                    <div class="card-body">
                         <div class="alert alert-primary">
-                            <i class="fas fa-lightbulb me-2"></i> Based on your content and audience, here are some potential sponsors that might be a good fit for your channel.
-                        </div>
-                        <div class="row">
-                            <div class="col-md-4 mb-3">
-                                <div class="card h-100">
-                                    <div class="card-body">
-                                        <h5 class="card-title">TechGadget Pro</h5>
-                                        <p class="card-text">Tech accessories and gadgets brand with a focus on premium products.</p>
-                                        <div class="d-flex justify-content-between align-items-center">
-                                            <span class="badge bg-success">95% Match</span>
-                                            <button class="btn btn-sm btn-outline-primary" disabled>Contact (Demo)</button>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-md-4 mb-3">
-                                <div class="card h-100">
-                                    <div class="card-body">
-                                        <h5 class="card-title">GameStream Plus</h5>
-                                        <p class="card-text">Gaming platform offering streaming services and exclusive content.</p>
-                                        <div class="d-flex justify-content-between align-items-center">
-                                            <span class="badge bg-success">92% Match</span>
-                                            <button class="btn btn-sm btn-outline-primary" disabled>Contact (Demo)</button>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-md-4 mb-3">
-                                <div class="card h-100">
-                                    <div class="card-body">
-                                        <h5 class="card-title">CodeMaster Academy</h5>
-                                        <p class="card-text">Online learning platform specializing in programming and tech skills.</p>
-                                        <div class="d-flex justify-content-between align-items-center">
-                                            <span class="badge bg-success">88% Match</span>
-                                            <button class="btn btn-sm btn-outline-primary" disabled>Contact (Demo)</button>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
+                            <i class="fas fa-lightbulb me-2"></i> In the full application, you'll have access to real-time data and interactive charts that allow you to filter by date ranges and specific metrics. The analytics dashboard is updated hourly to provide you with the most current information about your channel's performance.
                         </div>
                     </div>
                 </div>
             </div>
         </div>
+
+        <!-- CTA Section -->
+        <section class="cta-section">
+            <div class="container">
+                <div class="cta-content">
+                    <h2 class="cta-title">Ready to Unlock Your Channel's Potential?</h2>
+                    <p class="cta-text">
+                        Get access to powerful analytics tools that help you understand your audience, optimize your content, and grow your channel faster.
+                    </p>
+                    <div class="cta-buttons">
+                        <a href="register.html" class="btn btn-light btn-lg">
+                            <i class="fas fa-chart-line me-2"></i>Start Analyzing
+                        </a>
+                        <a href="features.html" class="btn btn-outline-light btn-lg">
+                            <i class="fas fa-info-circle me-2"></i>Learn More
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
     </div>
-    
+
     <!-- Footer -->
     <footer>
         <div class="container">
@@ -306,86 +185,11 @@
             </div>
         </div>
     </footer>
-    
+
     <!-- Bootstrap JS Bundle with Popper -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
-    
+
     <!-- Custom JS -->
     <script src="../js/main.js"></script>
-    
-    <!-- Chart.js Initialization -->
-    <script>
-        document.addEventListener('DOMContentLoaded', function() {
-            // Growth Trends Chart
-            const growthCtx = document.getElementById('growthChart').getContext('2d');
-            const growthChart = new Chart(growthCtx, {
-                type: 'line',
-                data: {
-                    labels: ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'],
-                    datasets: [
-                        {
-                            label: 'Subscribers',
-                            data: [950000, 980000, 1000000, 1050000, 1080000, 1100000, 1120000, 1150000, 1170000, 1190000, 1200000, 1220000],
-                            borderColor: '#6c63ff',
-                            backgroundColor: 'rgba(108, 99, 255, 0.1)',
-                            tension: 0.4,
-                            fill: true
-                        },
-                        {
-                            label: 'Views (in millions)',
-                            data: [5.2, 5.8, 6.5, 7.1, 6.8, 7.5, 8.2, 7.9, 8.5, 9.2, 8.8, 9.5],
-                            borderColor: '#ff6b6b',
-                            backgroundColor: 'rgba(255, 107, 107, 0.1)',
-                            tension: 0.4,
-                            fill: true
-                        }
-                    ]
-                },
-                options: {
-                    responsive: true,
-                    maintainAspectRatio: false,
-                    plugins: {
-                        legend: {
-                            position: 'top',
-                        }
-                    },
-                    scales: {
-                        y: {
-                            beginAtZero: false
-                        }
-                    }
-                }
-            });
-            
-            // Demographics Chart
-            const demographicsCtx = document.getElementById('demographicsChart').getContext('2d');
-            const demographicsChart = new Chart(demographicsCtx, {
-                type: 'doughnut',
-                data: {
-                    labels: ['18-24', '25-34', '35-44', '45-54', '55+'],
-                    datasets: [{
-                        data: [35, 40, 15, 7, 3],
-                        backgroundColor: [
-                            '#6c63ff',
-                            '#ff6b6b',
-                            '#ffc107',
-                            '#28a745',
-                            '#17a2b8'
-                        ],
-                        borderWidth: 1
-                    }]
-                },
-                options: {
-                    responsive: true,
-                    maintainAspectRatio: false,
-                    plugins: {
-                        legend: {
-                            position: 'bottom',
-                        }
-                    }
-                }
-            });
-        });
-    </script>
 </body>
 </html>
